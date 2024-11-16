@@ -2,17 +2,28 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>小奖励程序</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reeset.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <script src="mian.js"></script>
 
-  <button onclick="drawLottery()">抽奖</button>
-  <p id="result"></p>
+  <div class="prize-warper">
+    <div class="marker"></div>
+    <div class="nav-title">后陡门58号</div>
+    <div class="header-warper">
+      <img class="sgqt-bg" src="./image/sgqt_bg.jpg" alt="" />
+      <p class="prize-btn" id="drawBtn" onclick="drawLottery()">公主请抽奖</p>
+      <p class="prize-btn"  style="display: none;" id="restBtn" onclick="resetDraw()">重置抽奖</p>
+    </div>
+    <div class="sucess" id="sucess">
+      <p class="reult-text" id="result"></p>
+    </div>
+  </div>
 </body>
 
 </html>
